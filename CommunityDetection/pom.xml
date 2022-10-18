@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+      
+  <parent>
+    <artifactId>gephi-plugin-parent</artifactId>
+    <groupId>org.gephi</groupId>
+    <version>0.9.3</version>
+  </parent>
+      
+  <groupId>sk.smitala.gephi</groupId>
+      
+  <artifactId>communitydetection</artifactId>
+      
+  <version>1.0.0</version>
+      
+  <packaging>nbm</packaging>
+      
+  <name>CommunityDetection</name>
+      
+  <dependencies>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>core-library-wrapper</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.netbeans.api</groupId>
+      <artifactId>org-openide-awt</artifactId>
+      <version>RELEASE126</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>utils</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.netbeans.api</groupId>
+      <artifactId>org-openide-util-lookup</artifactId>
+      <version>RELEASE126</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>graph-api</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>algorithms-plugin</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.netbeans.api</groupId>
+      <artifactId>org-openide-util</artifactId>
+      <version>RELEASE126</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>io-importer-api</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>io-generator-api</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>statistics-api</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.gephi</groupId>
+      <artifactId>utils-longtask</artifactId>
+      <version>${project.parent.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.swinglabs.swingx</groupId>
+      <artifactId>swingx-all</artifactId>
+      <version>1.6.5-1</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>31.1-jre</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-math3</artifactId>
+      <version>3.6.1</version>
+    </dependency>
+  </dependencies>
+      
+  <build>
+            
+    <plugins>
+      <plugin>
+                        
+        <groupId>org.apache.netbeans.utilities</groupId>
+        <artifactId>nbm-maven-plugin</artifactId>
+        <version>4.7</version>
+
+        <configuration>
+                              
+          <author>Matej Šmitala</author>
+
+          <sourceCodeUrl>https://github.com/gephi/gephi-plugins.git</sourceCodeUrl>
+
+          <homePageUrl>https://code.google.com/p/network-community-detection/</homePageUrl>
+
+          <licenseName>GNU GPL v3</licenseName>
+          <licenseFile>https://www.gnu.org/licenses/gpl.html</licenseFile>
+                              
+          <publicPackages>
+                        
+                    </publicPackages>
+                          
+        </configuration>
+                    
+      </plugin>
+              
+    </plugins>
+        
+  </build>
+      
+    
+  <repositories>
+            
+    <repository>
+                  
+      <id>oss-sonatype</id>
+                  
+      <name>oss-sonatype</name>
+                  
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+                  
+      <snapshots>
+                        
+        <enabled>true</enabled>
+                    
+      </snapshots>
+              
+    </repository>
+
+    <repository>
+      <id>netbeans</id>
+      <name>NetBeans</name>
+      <url>https://netbeans.apidesign.org/maven2/</url>
+    </repository>
+  </repositories>
+  
+</project>
