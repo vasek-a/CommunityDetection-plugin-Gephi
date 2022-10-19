@@ -6,11 +6,15 @@ V tomto priečinku sa nachádza zdrojový kód pluginu Community Detection pre p
 * Súbor CommunityDetection je potrebné vložiť do priečinka /modules v repozitári *gephi-plugins* (https://github.com/gephi/gephi-plugins/)
 
 * V gephi-plugins/pom.xml je potrebné pridať adresu modulu do zoznamu pod riadok:
+```
         <!-- Add here the paths of all modules (e.g. <module>modules/MyModule</module>) -->
+```
 ako:
+```
         <module>modules/CommunityDetection</module>
-
+```
 * Nahradiť NBM plugin: 
+```
         <!-- NBM Plugin -->
         <plugin>
             <groupId>org.apache.netbeans.utilities</groupId>
@@ -32,13 +36,15 @@ ako:
                 </execution>
             </executions>
         </plugin>
+```
 pluginom:
+```
         <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>nbm-maven-plugin</artifactId>
             <version>3.14</version>
         </plugin>
-
+```
 ### Generovanie pluginu a spustenie Gephi
 Po úspešnej konfigurácii v repozitári *gephi-plugins* by mali správne fungovať Maven goals.
 
